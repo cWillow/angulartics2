@@ -75,6 +75,8 @@ constructor(private angulartics2: Angulartics2) {
 
 `custom_map` and other config settings you could set inside your HTML page will be overridden after each pagetrack. Therefore, you need to pass them to the GST configuration if you want to use them. At this point, you're probably better to remove completely the `gtag('config'` call from you HTML page and to add all required properties at module definition.
 
+If you are adding the scripts dynamically (eg when setting the tracking ID based on the environment) you may also have to add the tracking ID here.
+
 ```ts
 // bootstrap
 import { Angulartics2Module } from 'angulartics2';
